@@ -10,7 +10,7 @@ INSERT INTO product (product_id, product_name, price, stock_quantity, image_url)
 INSERT INTO member (full_name, email) VALUES 
 ('王小明', 'xiaoming@example.com');
 
--- sp_add_product 
+
 DELIMITER //
 CREATE PROCEDURE sp_add_product(
     IN p_id VARCHAR(50),
@@ -25,7 +25,7 @@ BEGIN
 END //
 DELIMITER ;
 
--- 取得大於0總數的產品
+
 DELIMITER //
 CREATE PROCEDURE sp_get_available_products()
 BEGIN

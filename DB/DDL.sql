@@ -1,7 +1,7 @@
 CREATE DATABASE IF NOT EXISTS shop_db;
 USE shop_db;
 
---product table
+
 CREATE TABLE product (
     product_id VARCHAR(50) PRIMARY KEY,
     product_name VARCHAR(100) NOT NULL,
@@ -10,7 +10,7 @@ CREATE TABLE product (
     image_url VARCHAR(255)
 );
 
---member table
+
 CREATE TABLE member (
     member_id INT AUTO_INCREMENT PRIMARY KEY,
     full_name VARCHAR(100) NOT NULL,
@@ -18,7 +18,7 @@ CREATE TABLE member (
     create_time DATETIME DEFAULT CURRENT_TIMESTAMP
 );
 
---order table
+
 CREATE TABLE order_main (
     order_id VARCHAR(50) PRIMARY KEY,
     member_id INT NOT NULL,
@@ -27,7 +27,7 @@ CREATE TABLE order_main (
     CONSTRAINT fk_order_member FOREIGN KEY (member_id) REFERENCES member(member_id)
 );
 
---order_detail table
+
 CREATE TABLE order_detail (
     detail_id INT AUTO_INCREMENT PRIMARY KEY,
     order_id VARCHAR(50)  NOT NULL,
