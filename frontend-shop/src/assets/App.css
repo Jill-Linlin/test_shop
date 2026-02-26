@@ -1,0 +1,41 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  background-color: var(--esun-green);
+  max-width: 1200px;
+  padding: 10px 20px;
+}
+
+.header-center {
+  flex: 1; /* 讓搜尋區自動撐開 */
+  margin: 0 50px;
+}
+
+.search-group {
+  display: flex;
+  background: white;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 20px; /* 賣家中心與購物車的間距 */
+}
+
+.search-group input {
+  flex: 1;
+  border: none;
+  padding: 0 15px;
+  outline: none; /* 點擊時不要有黑框 */
+}
+
+.logo-text,
+.nav-btn {
+  color: white;
+  text-decoration: none;
+  white-space: nowrap; /* 防止文字換行 */
+}

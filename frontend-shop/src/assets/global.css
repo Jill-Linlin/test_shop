@@ -1,0 +1,11 @@
+:root {
+  --esun-green: #00a19b;
+  --esun-gold: #b4a269;
+  --bg-light: #f4f7f6;
+}
+
+body {
+  margin: 0;
+  background-color: var(--bg-light);
+  font-family: "Microsoft JhengHei", sans-serif;
+}
